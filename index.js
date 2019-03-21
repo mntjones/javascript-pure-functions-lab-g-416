@@ -41,14 +41,14 @@ function bingeWatch(playlist) {
 
 
 
-function bingeWatch(episodes) {
-  if (episodes.length === 0) {
-    return 'Please let there be more!'
-  } else {
-    const nextEpisode = getNextEpisodeInPlaylist(episodes);
-    if (nextEpisode) {
-      const newPlaylist = removeFromPlaylist(episodes, nextEpisode);
-      return bingeWatch(newPlaylist);
-    }
-  }
-}
+// function bingeWatch(episodes) {
+//   if (episodes.length === 0) {
+//     return 'Please let there be more!'
+//   } else {
+//     const nextEpisode = getNextEpisodeInPlaylist(episodes);
+//     if (nextEpisode) {
+//       const newPlaylist = removeFromPlaylist(episodes, nextEpisode);
+//       return bingeWatch(newPlaylist);
+//     }
+//   }
+// }
