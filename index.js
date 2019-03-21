@@ -33,7 +33,8 @@ function bingeWatch(playlist) {
     return "Please let there be more!";
   }
   else {
-    const newPlaylist = playlist.shift();
+    const nextEpisode = getNextEpisodeInPlaylist(playlist);
+    const newPlaylist = removeFromPlaylist(playlist, nextEpisode);
     return bingeWatch(newPlaylist);
   }
 }
