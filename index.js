@@ -30,11 +30,11 @@ const getNextEpisodeInPlaylist = (playlist) => {
 
 function bingeWatch(playlist) {
   if (playlist.length === 0) {
-    newPlaylist.shift();
+    return "Please let there be more!";newPlaylist.shift();
     bingeWatch(newPlaylist);
   }
   else {
-    return "Please let there be more!";
+    
   }
 }
 
