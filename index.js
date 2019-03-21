@@ -29,8 +29,7 @@ const getNextEpisodeInPlaylist = (playlist) => {
 };
 
 function bingeWatch(playlist) {
-  const newPlaylist = [...playlist];
-  if (newPlaylist.length !== 0) {
+  if (playlist.length === 0) {
     newPlaylist.shift();
     bingeWatch(newPlaylist);
   }
